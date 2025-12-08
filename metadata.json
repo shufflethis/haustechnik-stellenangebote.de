@@ -1,0 +1,7 @@
+{
+  "name": "haustechnik-stellenangebote.de",
+  "description": "Die führende Plattform für Jobs in der Haustechnik (SHK, Elektro, Gebäudeautomation).",
+  "requestFramePermissions": [
+    "microphone"
+  ]
+}
