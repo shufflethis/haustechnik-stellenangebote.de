@@ -1,9 +1,17 @@
 import { GoogleGenAI } from "@google/genai";
 
 // Ensure the API key is available
-const apiKey = process.env.API_KEY || '';
+const apiKey = process.env.API_KEY || process.env.GEMINI_API_KEY || '';
 
-export const ai = new GoogleGenAI({ apiKey });
+let _ai: GoogleGenAI | null = null;
+
+export function getAI(): GoogleGenAI | null {
+    if (!apiKey) return null;
+    if (!_ai) {
+        _ai = new GoogleGenAI({ apiKey });
+    }
+    return _ai;
+}
 
 export const SYSTEM_INSTRUCTION = `
 Du bist "Technik-Tim", der KI-Karriereberater von haustechnik-stellenangebote.de.

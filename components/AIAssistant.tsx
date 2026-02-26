@@ -1,6 +1,6 @@
 import React, { useState, useRef, useEffect } from 'react';
 import { MessageSquare, X, Send, Bot, User, Loader2, Mic } from 'lucide-react';
-import { ai, SYSTEM_INSTRUCTION } from '../services/gemini';
+import { getAI, SYSTEM_INSTRUCTION } from '../services/gemini';
 import { ChatMessage } from '../types';
 import { Button } from './Button';
 
@@ -48,7 +48,12 @@ export const AIAssistant: React.FC = () => {
         parts: [{ text: m.text }]
       }));
 
-      const chat = ai.chats.create({
+      const aiClient = getAI();
+      if (!aiClient) {
+        throw new Error('KI-Assistent ist derzeit nicht verfügbar.');
+      }
+
+      const chat = aiClient.chats.create({
         model: 'gemini-2.5-flash',
         config: { systemInstruction: SYSTEM_INSTRUCTION },
         history: history
@@ -102,7 +107,7 @@ export const AIAssistant: React.FC = () => {
       {/* Chat Window */}
       {isOpen && (
         <div className="fixed bottom-6 right-6 z-50 w-[90vw] md:w-[400px] h-[500px] bg-white rounded-2xl shadow-2xl flex flex-col border border-slate-200 animate-in fade-in slide-in-from-bottom-10 duration-300">
-          
+
           {/* Header */}
           <div className="bg-brand-900 text-white p-4 rounded-t-2xl flex justify-between items-center">
             <div className="flex items-center gap-3">
@@ -127,11 +132,10 @@ export const AIAssistant: React.FC = () => {
                 className={`flex ${msg.role === 'user' ? 'justify-end' : 'justify-start'}`}
               >
                 <div
-                  className={`max-w-[80%] rounded-2xl px-4 py-3 text-sm leading-relaxed shadow-sm ${
-                    msg.role === 'user'
-                      ? 'bg-brand-600 text-white rounded-tr-none'
-                      : 'bg-white text-slate-800 border border-slate-200 rounded-tl-none'
-                  }`}
+                  className={`max-w-[80%] rounded-2xl px-4 py-3 text-sm leading-relaxed shadow-sm ${msg.role === 'user'
+                    ? 'bg-brand-600 text-white rounded-tr-none'
+                    : 'bg-white text-slate-800 border border-slate-200 rounded-tl-none'
+                    }`}
                 >
                   <p className="whitespace-pre-wrap">{msg.text}</p>
                 </div>
@@ -158,8 +162,8 @@ export const AIAssistant: React.FC = () => {
                 placeholder="Stellen Sie Ihre Frage..."
                 className="flex-1 resize-none border border-slate-300 rounded-lg px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-brand-500 focus:border-transparent h-[44px] max-h-[100px]"
               />
-              <Button 
-                onClick={handleSendMessage} 
+              <Button
+                onClick={handleSendMessage}
                 disabled={isLoading || !input.trim()}
                 className="w-12 h-[44px] p-0 flex items-center justify-center rounded-lg"
               >
