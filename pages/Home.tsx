@@ -15,10 +15,10 @@ const LegalSection = () => (
     <h1 className="text-3xl font-bold mb-8">Impressum</h1>
     <div className="prose prose-slate">
       <p>Angaben gemäß § 5 TMG</p>
-      <p><strong>Betreiber:</strong><br />Musterfirma GmbH<br />Handwerkerstraße 1<br />12345 Musterstadt</p>
-      <p><strong>Kontakt:</strong><br />Telefon: +49 123 456789<br />E-Mail: info@haustechnik-stellenangebote.de</p>
-      <p><strong>Registereintrag:</strong><br />Eintragung im Handelsregister.<br />Registergericht: Amtsgericht Musterstadt<br />Registernummer: HRB 12345</p>
-      <p><strong>Umsatzsteuer-ID:</strong><br />Umsatzsteuer-Identifikationsnummer gemäß §27 a Umsatzsteuergesetz: DE123456789</p>
+      <p><strong>Betreiber:</strong><br />Social Media Venture GmbH<br />Handwerkerstraße 1<br />10437 Berlin</p>
+      <p><strong>Kontakt:</strong><br />Telefon: +49 123 456789<br />E-Mail: info@socialmediaventure.com</p>
+      <p><strong>Registereintrag:</strong><br />Eintragung im Handelsregister.<br />Registergericht: Amtsgericht Musterstadt<br />Registernummer: HRB 162557 B</p>
+      <p><strong>Umsatzsteuer-ID:</strong><br />Umsatzsteuer-Identifikationsnummer gemäß §27 a Umsatzsteuergesetz: DE298885799</p>
       <h2 className="text-xl font-bold mt-8 mb-4">Haftungsausschluss (Disclaimer)</h2>
       <p>Dies ist eine Demo-Anwendung für Portfolio-Zwecke. Keine echten Stellenangebote.</p>
     </div>
