@@ -1,0 +1,19 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Thomas Sander",
+  "url": "https://haustechnik-stellenangebote.de/autor/thomas-sander",
+  "jobTitle": "Gruender & Geschaeftsfuehrer",
+  "worksFor": {
+    "@type": "Organization",
+    "name": "haustechnik-stellenangebote.de",
+    "url": "https://haustechnik-stellenangebote.de"
+  },
+  "description": "Gruender von haustechnik-stellenangebote.de - spezialisiertes Jobportal fuer Haustechnik-Stellenangebote.",
+  "knowsAbout": [
+    "Haustechnik",
+    "Personalwesen",
+    "Recruiting",
+    "Jobportale"
+  ]
+}

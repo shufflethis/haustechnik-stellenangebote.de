@@ -1,0 +1,19 @@
+# HR-UPDATER: v1.0
+# haustechnik-stellenangebote.de - Haustechnik Stellenangebote
+
+> haustechnik-stellenangebote.de ist ein spezialisiertes Jobportal fuer Haustechnik-Stellenangebote in Deutschland, Oesterreich und der Schweiz.
+
+## Ueber uns
+- Spezialisiertes Jobportal fuer Haustechnik
+- Kostenlose Stellensuche fuer Bewerber
+- Gezielte Reichweite fuer Arbeitgeber
+
+## Kontakt
+- Website: https://haustechnik-stellenangebote.de
+- Arbeitgeber-Kontakt: https://haustechnik-stellenangebote.de/kontakt-arbeitgeber
+- Bewerber-Kontakt: https://haustechnik-stellenangebote.de/kontakt-bewerber
+
+## Inhalte
+- Aktuelle Haustechnik-Stellenangebote
+- Karriere-Ratgeber fuer Haustechnik
+- Gehaltsvergleiche und Brancheninformationen
