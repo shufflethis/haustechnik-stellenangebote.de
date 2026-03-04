@@ -6,63 +6,228 @@ import { Button } from './Button';
 const MOCK_JOBS: Job[] = [
   {
     id: '1',
-    title: 'Anlagenmechaniker SHK (m/w/d)',
-    company: 'WärmeTech GmbH',
-    location: 'Berlin',
+    title: 'Mitarbeiter Haustechnik (m/w/d)',
+    company: 'Evangelisch-Lutherischer Kirchenkreis Hamburg-Ost Kirchliches Verwaltungszentrum',
+    location: 'Hamburg',
     type: 'Vollzeit',
-    salary: '45.000 - 55.000 €',
-    tags: ['Wärmepumpe', 'Sanitär', 'Kundendienst'],
-    postedAt: 'Vor 2 Tagen'
+    tags: ['Hauswart/in/Haustechniker/in'],
+    postedAt: '2026-03-04'
   },
   {
     id: '2',
-    title: 'Elektroniker für Energie- und Gebäudetechnik',
-    company: 'SmartHome Solutions',
-    location: 'München',
+    title: 'Mitarbeiter:in Haustechnik',
+    company: 'Globus Handelshof St. Wendel GmbH & Co. KG BS Grünstadt',
+    location: 'Grünstadt',
     type: 'Vollzeit',
-    salary: '52.000 - 65.000 €',
-    tags: ['KNX', 'Loxone', 'Installation'],
-    postedAt: 'Heute'
+    tags: ['Hauswart/in/Haustechniker/in'],
+    postedAt: '2026-03-03'
   },
   {
     id: '3',
-    title: 'Meister SHK als Projektleiter',
-    company: 'Baudienstleistungen Müller',
-    location: 'Hamburg',
+    title: 'Mitarbeiter:in Haustechnik',
+    company: 'Globus Handelshof St. Wendel GmbH & Co. KG Betriebsstätte Grünstadt',
+    location: 'Grünstadt',
     type: 'Vollzeit',
-    salary: '60.000 € + Firmenwagen',
-    tags: ['Führung', 'Planung', 'Büro'],
-    postedAt: 'Vor 1 Woche'
+    tags: ['Hauswart/in/Haustechniker/in'],
+    postedAt: '2026-03-03'
   },
   {
     id: '4',
-    title: 'Ausbildung 2024: Mechatroniker Kältetechnik',
-    company: 'CoolClimate AG',
-    location: 'Frankfurt',
-    type: 'Ausbildung',
-    salary: 'Tariflich',
-    tags: ['Karrierestart', 'Klimatechnik'],
-    postedAt: 'Gestern'
+    title: 'Mitarbeiter (m/w/d) für die Haustechnik',
+    company: 'Roland Klinik gGmbH',
+    location: 'Bremen',
+    type: 'Vollzeit',
+    tags: ['Hauswart/in/Haustechniker/in'],
+    postedAt: '2026-03-02'
   },
   {
     id: '5',
-    title: 'Servicetechniker Lüftung',
-    company: 'AirClean Systems',
-    location: 'Stuttgart',
+    title: 'Leitung Haustechnik (m/w/d)',
+    company: 'Roland Klinik gGmbH',
+    location: 'Bremen',
     type: 'Vollzeit',
-    salary: 'bis 58.000 €',
-    tags: ['RLT-Anlagen', 'Wartung'],
-    postedAt: 'Vor 3 Tagen'
+    tags: ['Hauswart/in/Haustechniker/in'],
+    postedAt: '2026-03-02'
   },
   {
     id: '6',
-    title: 'Technischer Systemplaner Versorgungs- und Ausrüstungstechnik',
-    company: 'Planungsbüro Weber',
-    location: 'Remote / Köln',
-    type: 'Teilzeit',
-    salary: '25 € / Std.',
-    tags: ['CAD', 'Revit', 'Planung'],
-    postedAt: 'Neu'
+    title: 'Haustechnik',
+    company: 'Limes Schlossklinik Mecklenburgische Schweiz',
+    location: 'Teterow',
+    type: 'Vollzeit',
+    tags: ['Hauswart/in/Haustechniker/in'],
+    postedAt: '2026-03-01'
+  },
+  {
+    id: '7',
+    title: 'Mitarbeiter Haustechnik (m/w/d)',
+    company: 'Hotel-Restaurant ERBPRINZ GmbH',
+    location: 'Ettlingen',
+    type: 'Vollzeit',
+    tags: ['Hauswart/in/Haustechniker/in'],
+    postedAt: '2026-03-01'
+  },
+  {
+    id: '8',
+    title: 'Mitarbeiter Haustechnik (m/w/d)',
+    company: 'Hotel ZUGBRÜCKE Grenzau GmbH',
+    location: 'Höhr-Grenzhausen',
+    type: 'Vollzeit',
+    tags: ['Hauswart/in/Haustechniker/in'],
+    postedAt: '2026-03-01'
+  },
+  {
+    id: '9',
+    title: 'Elektroniker (w/m/d) Haustechnik',
+    company: 'Apleona GmbH',
+    location: 'Donauwörth',
+    type: 'Vollzeit',
+    tags: ['Elektroniker/in - Energie- und Gebäudetechnik'],
+    postedAt: '2026-03-01'
+  },
+  {
+    id: '10',
+    title: 'Lagerlogistik / Haustechnik (m/w/d)',
+    company: 'Charlottenklinik für Augenheilkunde',
+    location: 'Stuttgart',
+    type: 'Vollzeit',
+    tags: ['Hauswart/in/Haustechniker/in'],
+    postedAt: '2026-02-27'
+  },
+  {
+    id: '11',
+    title: 'Projektleiter - Haustechnik (m/w/d)',
+    company: 'Tempton Personaldienstleistungen GmbH NL Bautzen',
+    location: 'Görlitz, Neiße',
+    type: 'Vollzeit',
+    tags: ['Projektleiter/in'],
+    postedAt: '2026-02-27'
+  },
+  {
+    id: '12',
+    title: 'Schlosser (m/w/d) Haustechnik',
+    company: 'avanti GmbH',
+    location: 'München',
+    type: 'Vollzeit',
+    tags: ['Betriebsschlosser/in'],
+    postedAt: '2026-02-26'
+  },
+  {
+    id: '13',
+    title: 'Elektroniker Haustechnik (m/w/d)',
+    company: 'GeAT mbH',
+    location: 'Eisenach, Thüringen',
+    type: 'Vollzeit',
+    tags: ['Elektroanlagenmonteur/in'],
+    postedAt: '2026-02-25'
+  },
+  {
+    id: '14',
+    title: 'Mitarbeiter:in Haustechnik',
+    company: 'Globus Handelshof GmbH & Co. KG Dutenhofen',
+    location: 'Wetzlar',
+    type: 'Vollzeit',
+    tags: ['Hauswart/in/Haustechniker/in'],
+    postedAt: '2026-02-25'
+  },
+  {
+    id: '15',
+    title: 'Mitarbeiter der Haustechnik (m/w/d)',
+    company: 'Reha-Klinik St. Peter-Ording gGmbH',
+    location: 'Sankt Peter-Ording',
+    type: 'Vollzeit',
+    tags: ['Maler/in und Lackierer/in - Maler/in'],
+    postedAt: '2026-02-24'
+  },
+  {
+    id: '16',
+    title: 'Haustechnik Minijob (m/w/d)',
+    company: 'ZAR Leipzig GmbH',
+    location: 'Leipzig',
+    type: 'Vollzeit',
+    tags: ['Hausmeister/in'],
+    postedAt: '2026-02-23'
+  },
+  {
+    id: '17',
+    title: 'Mitarbeiter Haustechnik (m/w/d)',
+    company: 'Lebenshilfewerk Ilmenau/Rudolstadt e.V.',
+    location: 'Rudolstadt',
+    type: 'Vollzeit',
+    tags: ['Elektroinstallateur/in'],
+    postedAt: '2026-02-23'
+  },
+  {
+    id: '18',
+    title: 'Vertriebsinnendienst Haustechnik (m/w/d)',
+    company: 'persona service AG & Co. KG',
+    location: 'Lippstadt',
+    type: 'Vollzeit',
+    tags: ['Vertriebstechniker/in'],
+    postedAt: '2026-02-20'
+  },
+  {
+    id: '19',
+    title: 'Leitung Haustechnik (w/m/d)',
+    company: 'ATOS Klinik Fleetinsel Hamburg GmbH & Co. KG',
+    location: 'Hamburg',
+    type: 'Vollzeit',
+    tags: ['Bereichsleiter/in'],
+    postedAt: '2026-02-19'
+  },
+  {
+    id: '20',
+    title: 'Bundesfreiwilligendienst – Haustechnik (m/w/d)',
+    company: 'Caritasverb. f.d. Diöz.EI e.V. Caritas-Seniorenheim St. Pius',
+    location: 'Ingolstadt, Donau',
+    type: 'Vollzeit',
+    tags: ['Hauswart/in/Haustechniker/in'],
+    postedAt: '2026-02-19'
+  },
+  {
+    id: '21',
+    title: 'Außendienstmitarbeiter Haustechnik (m/w/d)',
+    company: 'Grünbeck AG',
+    location: 'Hamburg',
+    type: 'Vollzeit',
+    tags: ['Außendienstmitarbeiter/in'],
+    postedAt: '2026-02-18'
+  },
+  {
+    id: '22',
+    title: 'Außendienstmitarbeiter - Haustechnik (w/m/d)',
+    company: 'Bär & Ollenroth KG Brandenburg',
+    location: 'Brandenburg an der Havel',
+    type: 'Vollzeit',
+    tags: ['Außendienstmitarbeiter/in'],
+    postedAt: '2026-02-18'
+  },
+  {
+    id: '23',
+    title: 'Schlosser (m/w/d) Haustechnik',
+    company: 'avanti GmbH',
+    location: 'Friedrichshafen',
+    type: 'Vollzeit',
+    tags: ['Betriebsschlosser/in'],
+    postedAt: '2026-02-16'
+  },
+  {
+    id: '24',
+    title: 'Außendienstmitarbeiter (m/w/d) Haustechnik',
+    company: 'Öngel, Ahmet',
+    location: 'München',
+    type: 'Vollzeit',
+    tags: ['Außendienstmitarbeiter/in'],
+    postedAt: '2026-02-15'
+  },
+  {
+    id: '25',
+    title: 'Außendienstmitarbeiter (m/w/d) Haustechnik',
+    company: 'Öngel, Ahmet',
+    location: 'Xanten',
+    type: 'Vollzeit',
+    tags: ['Außendienstmitarbeiter/in'],
+    postedAt: '2026-02-15'
   }
 ];
 
