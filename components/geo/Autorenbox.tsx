@@ -18,6 +18,7 @@ const Autorenbox: React.FC = () => {
       </p>
       <div className="autorenbox-links">
         <a href="https://haustechnik-stellenangebote.de/autor/thomas-sander">Mehr ueber den Autor</a>
+        <a href="https://de.linkedin.com/in/thomas-sander-520676303" target="_blank" rel="noopener noreferrer">LinkedIn-Profil</a>
       </div>
     </div>
   );

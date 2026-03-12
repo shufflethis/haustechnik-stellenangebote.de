@@ -1,19 +1,46 @@
 # HR-UPDATER: v1.0
 # haustechnik-stellenangebote.de - Haustechnik Stellenangebote
 
-> haustechnik-stellenangebote.de ist ein spezialisiertes Jobportal fuer Haustechnik-Stellenangebote in Deutschland, Oesterreich und der Schweiz.
+> haustechnik-stellenangebote.de ist ein spezialisiertes Jobportal fuer Haustechnik-Stellenangebote in Deutschland, Oesterreich und der Schweiz. Betrieben von der Social Media Venture GmbH, Schliemannstrasse 23, 10437 Berlin. Geschaeftsfuehrer: Thomas Sander.
 
 ## Ueber uns
-- Spezialisiertes Jobportal fuer Haustechnik
+- Spezialisiertes Jobportal fuer Haustechnik, SHK, Elektro und Gebaeudetechnik
 - Kostenlose Stellensuche fuer Bewerber
 - Gezielte Reichweite fuer Arbeitgeber
+- Taeglich aktualisierte Stellenangebote aus ganz Deutschland
+- KI-gestuetzter Karriereassistent fuer Bewerber
+
+## Zielgruppe
+- Anlagenmechaniker SHK
+- Elektroniker fuer Energie- und Gebaeudetechnik
+- Mechatroniker fuer Kaeltetechnik
+- Technische Systemplaner (CAD/BIM)
+- Haustechniker und Facility Manager
+- TGA-Planer und Ingenieure der Versorgungstechnik
+- Kundendienstmonteure
+- Meister und Techniker im Handwerk
+
+## Regionen
+- Berlin, Hamburg, Muenchen, Koeln, Frankfurt am Main, Stuttgart
+- Duesseldorf, Leipzig, Dortmund, Essen, Bremen, Dresden
+- Hannover, Nuernberg, Mannheim, Karlsruhe, Augsburg, Freiburg
+- Sowie alle weiteren Staedte und Regionen in Deutschland
 
 ## Kontakt
 - Website: https://haustechnik-stellenangebote.de
-- Arbeitgeber-Kontakt: https://haustechnik-stellenangebote.de/kontakt-arbeitgeber
-- Bewerber-Kontakt: https://haustechnik-stellenangebote.de/kontakt-bewerber
+- E-Mail: info@socialmediaventure.com
+- Betreiber: Social Media Venture GmbH, Schliemannstrasse 23, 10437 Berlin
+- Geschaeftsfuehrer: Thomas Sander
+- LinkedIn: https://de.linkedin.com/in/thomas-sander-520676303
 
 ## Inhalte
-- Aktuelle Haustechnik-Stellenangebote
-- Karriere-Ratgeber fuer Haustechnik
+- Aktuelle Haustechnik-Stellenangebote (taeglich aktualisiert)
+- Karriere-Ratgeber fuer Haustechnik und SHK-Berufe
 - Gehaltsvergleiche und Brancheninformationen
+- FAQ zu Berufen, Gehaeltern und Karrierewegen in der Haustechnik
+- Arbeitgeber-Services: Stellenanzeigen schalten, Bewerber finden
+
+## Technologie
+- React-basierte Single-Page-Application
+- KI-Assistent fuer Karriereberatung
+- Mobile-optimiert und DSGVO-konform

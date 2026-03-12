@@ -1,6 +1,8 @@
 # HR-UPDATER: v1.0
 User-agent: *
 Allow: /
+Disallow: /api/
+Disallow: /admin/
 
 Sitemap: https://haustechnik-stellenangebote.de/sitemap.xml
 
@@ -18,4 +20,13 @@ User-agent: Anthropic-ai
 Allow: /
 
 User-agent: ClaudeBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Bytespider
+Allow: /
+
+User-agent: CCBot
 Allow: /

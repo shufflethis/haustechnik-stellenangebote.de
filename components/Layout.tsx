@@ -137,7 +137,7 @@ export const Layout: React.FC<LayoutProps> = ({ children, onNavigate, activeSect
           </div>
           
           <div className="border-t border-slate-800 pt-8 flex flex-col md:flex-row justify-between items-center text-sm text-slate-500">
-            <p>&copy; 2024 haustechnik-stellenangebote.de. Alle Rechte vorbehalten.</p>
+            <p>&copy; 2025 haustechnik-stellenangebote.de. Alle Rechte vorbehalten.</p>
             <div className="flex items-center gap-2 mt-4 md:mt-0">
                <ShieldCheck className="w-4 h-4" />
                <span>SSL-verschlüsselt & DSGVO-konform</span>
