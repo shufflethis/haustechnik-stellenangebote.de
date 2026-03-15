@@ -6,6 +6,51 @@ import { Button } from './Button';
 const MOCK_JOBS: Job[] = [
   {
     id: '1',
+    title: 'Einrichter (m/w/d) für Kunststoffspritzgussmaschinen',
+    company: 'Medisca GmbH',
+    location: 'Kabelsketal',
+    type: 'Vollzeit',
+    tags: [],
+    postedAt: '2026-03-15'
+  },
+  {
+    id: '2',
+    title: 'Zahnarzt (m/w/d)',
+    company: 'MeinDentist Berlin GmbH',
+    location: 'Potsdam',
+    type: 'Vollzeit',
+    tags: [],
+    postedAt: '2026-03-15'
+  },
+  {
+    id: '3',
+    title: 'Zahnarzt (m/w/d)',
+    company: 'MeinDentist Berlin GmbH',
+    location: 'Berlin',
+    type: 'Vollzeit',
+    tags: [],
+    postedAt: '2026-03-15'
+  },
+  {
+    id: '4',
+    title: 'Mitarbeiter (m/w/d) Finanzbuchhaltung & Digitale Prozesse',
+    company: 'avs SYSTEM LIFT AGSofort-Bewerbung',
+    location: 'Hannover',
+    type: 'Vollzeit',
+    tags: [],
+    postedAt: '2026-03-15'
+  },
+  {
+    id: '5',
+    title: 'Mitarbeiter (m/w/d) Finanzbuchhaltung & Digitale Prozesse',
+    company: 'avs SYSTEM LIFT AGSofort-Bewerbung',
+    location: 'Isernhagen',
+    type: 'Vollzeit',
+    tags: [],
+    postedAt: '2026-03-15'
+  },
+  {
+    id: '6',
     title: 'Mechatroniker (m/w/d) Haustechnik',
     company: 'WEISS Personalmanagement GmbH - Hanau',
     location: 'Rodgau',
@@ -14,7 +59,7 @@ const MOCK_JOBS: Job[] = [
     postedAt: '2026-03-07'
   },
   {
-    id: '2',
+    id: '7',
     title: 'Leiter/in Haustechnik (m/w/d)',
     company: 'StrandGut Resort GmbH & Co. KG',
     location: 'Sankt Peter-Ording',
@@ -23,7 +68,7 @@ const MOCK_JOBS: Job[] = [
     postedAt: '2026-03-05'
   },
   {
-    id: '3',
+    id: '8',
     title: 'Sachgebietsleiter/-in Haustechnik (m/w/d)',
     company: 'Hansestadt Wismar',
     location: 'Wismar, Mecklenburg',
@@ -32,7 +77,7 @@ const MOCK_JOBS: Job[] = [
     postedAt: '2026-03-05'
   },
   {
-    id: '4',
+    id: '9',
     title: 'Bauleiter (m/w/d) für die Haustechnik',
     company: 'IMPLABAU GmbH',
     location: 'Neubrandenburg, Mecklenburg',
@@ -41,7 +86,7 @@ const MOCK_JOBS: Job[] = [
     postedAt: '2026-03-05'
   },
   {
-    id: '5',
+    id: '10',
     title: 'Teamleiter Haustechnik (m/w/d)',
     company: 'Recrutis Consulting GmbH',
     location: 'Eschweiler, Rheinland',
@@ -50,7 +95,7 @@ const MOCK_JOBS: Job[] = [
     postedAt: '2026-03-04'
   },
   {
-    id: '6',
+    id: '11',
     title: 'Leiter Haustechnik (m/w/d)',
     company: 'Recrutis Consulting GmbH',
     location: 'Alsdorf, Rheinland',
@@ -59,7 +104,7 @@ const MOCK_JOBS: Job[] = [
     postedAt: '2026-03-04'
   },
   {
-    id: '7',
+    id: '12',
     title: 'Mitarbeiter Haustechnik',
     company: 'Markgräflerland-Klinik',
     location: 'Bad Bellingen, Baden',
@@ -68,7 +113,7 @@ const MOCK_JOBS: Job[] = [
     postedAt: '2026-03-04'
   },
   {
-    id: '8',
+    id: '13',
     title: 'Mitarbeiter Haustechnik (m/w/d)',
     company: 'Evangelisch-Lutherischer Kirchenkreis Hamburg-Ost Kirchliches Verwaltungszentrum',
     location: 'Hamburg',
@@ -77,7 +122,7 @@ const MOCK_JOBS: Job[] = [
     postedAt: '2026-03-04'
   },
   {
-    id: '9',
+    id: '14',
     title: 'Mitarbeiter:in Haustechnik',
     company: 'Globus Handelshof St. Wendel GmbH & Co. KG BS Grünstadt',
     location: 'Grünstadt',
@@ -86,7 +131,7 @@ const MOCK_JOBS: Job[] = [
     postedAt: '2026-03-03'
   },
   {
-    id: '10',
+    id: '15',
     title: 'Mitarbeiter:in Haustechnik',
     company: 'Globus Handelshof St. Wendel GmbH & Co. KG Betriebsstätte Grünstadt',
     location: 'Grünstadt',
@@ -95,7 +140,7 @@ const MOCK_JOBS: Job[] = [
     postedAt: '2026-03-03'
   },
   {
-    id: '11',
+    id: '16',
     title: 'Mitarbeiter (m/w/d) für die Haustechnik',
     company: 'Roland Klinik gGmbH',
     location: 'Bremen',
@@ -104,7 +149,7 @@ const MOCK_JOBS: Job[] = [
     postedAt: '2026-03-02'
   },
   {
-    id: '12',
+    id: '17',
     title: 'Leitung Haustechnik (m/w/d)',
     company: 'Roland Klinik gGmbH',
     location: 'Bremen',
@@ -113,7 +158,7 @@ const MOCK_JOBS: Job[] = [
     postedAt: '2026-03-02'
   },
   {
-    id: '13',
+    id: '18',
     title: 'Haustechnik',
     company: 'Limes Schlossklinik Mecklenburgische Schweiz',
     location: 'Teterow',
@@ -122,7 +167,7 @@ const MOCK_JOBS: Job[] = [
     postedAt: '2026-03-01'
   },
   {
-    id: '14',
+    id: '19',
     title: 'Mitarbeiter Haustechnik (m/w/d)',
     company: 'Hotel-Restaurant ERBPRINZ GmbH',
     location: 'Ettlingen',
@@ -131,7 +176,7 @@ const MOCK_JOBS: Job[] = [
     postedAt: '2026-03-01'
   },
   {
-    id: '15',
+    id: '20',
     title: 'Mitarbeiter Haustechnik (m/w/d)',
     company: 'Hotel ZUGBRÜCKE Grenzau GmbH',
     location: 'Höhr-Grenzhausen',
@@ -140,7 +185,7 @@ const MOCK_JOBS: Job[] = [
     postedAt: '2026-03-01'
   },
   {
-    id: '16',
+    id: '21',
     title: 'Elektroniker (w/m/d) Haustechnik',
     company: 'Apleona GmbH',
     location: 'Donauwörth',
@@ -149,7 +194,7 @@ const MOCK_JOBS: Job[] = [
     postedAt: '2026-03-01'
   },
   {
-    id: '17',
+    id: '22',
     title: 'Lagerlogistik / Haustechnik (m/w/d)',
     company: 'Charlottenklinik für Augenheilkunde',
     location: 'Stuttgart',
@@ -158,7 +203,7 @@ const MOCK_JOBS: Job[] = [
     postedAt: '2026-02-27'
   },
   {
-    id: '18',
+    id: '23',
     title: 'Projektleiter - Haustechnik (m/w/d)',
     company: 'Tempton Personaldienstleistungen GmbH NL Bautzen',
     location: 'Görlitz, Neiße',
@@ -167,7 +212,7 @@ const MOCK_JOBS: Job[] = [
     postedAt: '2026-02-27'
   },
   {
-    id: '19',
+    id: '24',
     title: 'Schlosser (m/w/d) Haustechnik',
     company: 'avanti GmbH',
     location: 'München',
@@ -176,58 +221,13 @@ const MOCK_JOBS: Job[] = [
     postedAt: '2026-02-26'
   },
   {
-    id: '20',
+    id: '25',
     title: 'Elektroniker Haustechnik (m/w/d)',
     company: 'GeAT mbH',
     location: 'Eisenach, Thüringen',
     type: 'Vollzeit',
     tags: ['Elektroanlagenmonteur/in'],
     postedAt: '2026-02-25'
-  },
-  {
-    id: '21',
-    title: 'Mitarbeiter:in Haustechnik',
-    company: 'Globus Handelshof GmbH & Co. KG Dutenhofen',
-    location: 'Wetzlar',
-    type: 'Vollzeit',
-    tags: ['Hauswart/in/Haustechniker/in'],
-    postedAt: '2026-02-25'
-  },
-  {
-    id: '22',
-    title: 'Mitarbeiter der Haustechnik (m/w/d)',
-    company: 'Reha-Klinik St. Peter-Ording gGmbH',
-    location: 'Sankt Peter-Ording',
-    type: 'Vollzeit',
-    tags: ['Maler/in und Lackierer/in - Maler/in'],
-    postedAt: '2026-02-24'
-  },
-  {
-    id: '23',
-    title: 'Haustechnik Minijob (m/w/d)',
-    company: 'ZAR Leipzig GmbH',
-    location: 'Leipzig',
-    type: 'Vollzeit',
-    tags: ['Hausmeister/in'],
-    postedAt: '2026-02-23'
-  },
-  {
-    id: '24',
-    title: 'Mitarbeiter Haustechnik (m/w/d)',
-    company: 'Lebenshilfewerk Ilmenau/Rudolstadt e.V.',
-    location: 'Rudolstadt',
-    type: 'Vollzeit',
-    tags: ['Elektroinstallateur/in'],
-    postedAt: '2026-02-23'
-  },
-  {
-    id: '25',
-    title: 'Vertriebsinnendienst Haustechnik (m/w/d)',
-    company: 'persona service AG & Co. KG',
-    location: 'Lippstadt',
-    type: 'Vollzeit',
-    tags: ['Vertriebstechniker/in'],
-    postedAt: '2026-02-20'
   }
 ];
 
